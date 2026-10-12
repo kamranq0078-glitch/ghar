@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#17232d">
+  <title>A Day at Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <main class="journey" aria-label="A day at home in Kashmir">
+    <div class="sky" aria-hidden="true"></div>
+    <div class="landscape" aria-hidden="true"></div>
+    <div class="scene-art" id="scene-art" aria-hidden="true"></div>
+    <div class="weather" id="weather" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="topbar">
+      <span class="home-mark" aria-hidden="true">⌂</span>
+      <span class="day-label">A day at home</span>
+      <span class="scene-count" id="scene-count">01 / 05</span>
+    </header>
+    <section class="scene-info" aria-live="polite">
+      <p class="time-label" id="time-label">Dawn</p>
+      <h1 id="scene-title">The courtyard</h1>
+      <p class="scene-subtitle" id="scene-subtitle">Under the chinar</p>
+    </section>
+    <button class="scene-action" id="scene-action" aria-label="Gently stir the chinar tree"><span>✦</span></button>
+    <nav class="journey-nav" aria-label="Move through the day">
+      <button class="nav-arrow" id="previous" aria-label="Previous scene">←</button>
+      <div class="time-stops" id="time-stops"></div>
+      <button class="nav-arrow" id="next" aria-label="Next scene">→</button>
+    </nav>
+    <p class="hint" id="hint">Tap the tree</p>
+  </main>
+  <script src="scripts/scenes/dawn.js"></script>
+  <script src="scripts/scenes/kitchen.js"></script>
+  <script src="scripts/scenes/sitting-room.js"></script>
+  <script src="scripts/scenes/nursery.js"></script>
+  <script src="scripts/scenes/balcony.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
